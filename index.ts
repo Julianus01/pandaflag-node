@@ -47,17 +47,3 @@ class PandaflagClient {
 }
 
 export default new PandaflagClient()
-
-// {
-//   name: 'maps_v2'
-//   description: 'Updated UI version of maps feature'
-//   enabled: true
-// }
-
-// const client = new PandaflagClient()
-// client.init('1e9743f9-e32d-4c7d-9663-09ba4ef3627d', 'production')
-
-// setTimeout(() => {
-//   console.log('Flags')
-//   console.log(client.getFlags())
-// }, 3000)

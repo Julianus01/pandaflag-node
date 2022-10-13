@@ -21,13 +21,13 @@ PandaflagClient.init(PROJECT_API_KEY, ENVIRONMENT)
 ## Evaluate flags
 
 ```tsx
-import PandaflagClient from 'pandaflag-node'
+import PandaflagClient, { Flag } from 'pandaflag-node'
 
 // Get all flags
-const flags = PandaflagClient.getFlags()
+const flags: Flag[] = PandaflagClient.getFlags()
 
 // Get specific flag
-const flag = PandaflagClient.getFlag('maps_v2')
+const flag: Flag = PandaflagClient.getFlag('maps_v2')
 // {
 //   name: 'maps_v2'
 //   description: 'Updated UI version of maps feature'
