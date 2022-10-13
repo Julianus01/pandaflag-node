@@ -3,7 +3,6 @@ import { io, Socket } from 'socket.io-client'
 const PANDAFLAG_SOCKET_URL: string = 'ws://api.pandaflag.com/'
 
 export interface Flag {
-  id: string
   name: string
   description: string
   enabled: boolean
@@ -48,6 +47,12 @@ class PandaflagClient {
 }
 
 export default new PandaflagClient()
+
+// {
+//   name: 'maps_v2'
+//   description: 'Updated UI version of maps feature'
+//   enabled: true
+// }
 
 // const client = new PandaflagClient()
 // client.init('1e9743f9-e32d-4c7d-9663-09ba4ef3627d', 'production')
