@@ -1,10 +1,14 @@
 {
   "name": "pandaflag-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "url": "https://github.com/Julianus01/pandaflag-node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Julianus01/pandaflag-node"
+  },
+  "homepage": "https://github.com/Julianus01/pandaflag-node#readme",
   "scripts": {
     "dev": "nodemon index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +18,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.1.2",
     "socket.io-client": "^4.5.2"
   },
   "devDependencies": {
