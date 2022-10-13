@@ -10,7 +10,7 @@ npm install pandaflag-node
 
 ## Initialise the client
 
-```
+```tsx
 import PandaflagClient from 'pandaflag-node'
 
 PandaflagClient.init(PROJECT_API_KEY, ENVIRONMENT)
@@ -21,7 +21,7 @@ PandaflagClient.init(PROJECT_API_KEY, ENVIRONMENT)
 
 ## Evaluate flags
 
-```
+```tsx
 // Get all flags
 const flags = client.getFlags()
 
