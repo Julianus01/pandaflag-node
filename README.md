@@ -14,10 +14,9 @@ npm install pandaflag-node
 import PandaflagClient from 'pandaflag-node'
 
 PandaflagClient.init(PROJECT_API_KEY, ENVIRONMENT)
+// **PROJECT_API_KEY** = Your projects api key found in Pandaflag app In **Projects** page
+// **ENVIRONMENT** = The environment name for which you initialize the client
 ```
-
-**PROJECT_API_KEY** = Your projects api key found in Pandaflag app In **Projects** page<br/>
-**ENVIRONMENT** = The environment name for which you initialize the client
 
 ## Evaluate flags
 
