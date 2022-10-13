@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "url": "https://github.com/Julianus01/pandaflag-node",
   "scripts": {
     "dev": "nodemon index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
