@@ -1,6 +1,6 @@
 import { io, Socket } from 'socket.io-client'
 
-const PANDAFLAG_SOCKET_URL: string = 'ws://api.pandaflag.com/'
+const PANDAFLAG_SOCKET_URL: string = 'wss://api.pandaflag.com/'
 
 export interface Flag {
   name: string
@@ -13,7 +13,7 @@ class PandaflagClient {
   private isLoading: boolean = true
 
   init(apiKey: string, environment: string) {
-    const socket: Socket = io(PANDAFLAG_SOCKET_URL, { query: { apiKey, environment } })
+    const socket: Socket = io(PANDAFLAG_SOCKET_URL, { secure: true, query: { apiKey, environment } })
 
     socket.on('connect', () => {
       socket.on('newFlags', (data: Flag[]) => {
@@ -22,6 +22,9 @@ class PandaflagClient {
       })
 
       socket.on('error', (data: Error) => {
+        console.log('Error')
+        console.log(data)
+
         socket.disconnect()
         throw new Error(data.message)
       })
