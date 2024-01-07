@@ -1,6 +1,6 @@
 import { io, Socket } from 'socket.io-client'
 
-const PANDAFLAG_SOCKET_URL: string = 'wss://api.pandaflag.com/'
+const PANDAFLAG_SOCKET_URL: string = 'wss://api.pandaflag.net/'
 
 export interface Flag {
   name: string
